@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receita</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Exos</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./conta.html">Conta</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./receita.html">Receita</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./despesa.html">Despesa</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <h3>+Receita</h3>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-10">
+                    <label for="descricao">Descricao</label>
+                    <input type="text" class="form-control" id="descricao">
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="valor">Valor</label>
+                    <input type="number" class="form-control" id="valor">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="dataVencimento">Vencimento</label>
+                    <input type="date" name="dataVencimento" id="dataVencimento" class="form-control">
+                </div>
+                <div class="form-group col-md-8">
+                    <label for="conta">Conta</label>
+                    <select id="conta" class="form-control">
+                        <option selected>Choose...</option>
+                        <option>...</option>
+                    </select>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Salvar</button>
+        </form>
+    </div>
+    <div>
+        <br>
+    </div>
+    <div class="container">
+        <h3>Lista</h3>
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Descrição</th>
+                    <th scope="col">valor</th>
+                    <th scope="col">Data Vencimento</th>
+                    <th scope="col">Conta</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Salario</td>
+                    <td>5000.00</td>
+                    <td>15000.00</td>
+                    <td>Dinheiro</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Mixtel</td>
+                    <td>5000.00</td>
+                    <td>15000.00</td>
+                    <td>Poupança</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Auge</td>
+                    <td>5000.00</td>
+                    <td>15000.00</td>
+                    <td>Dinheiro</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
